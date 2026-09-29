@@ -1,0 +1,16 @@
+---
+name: Pull Request Workflow | Terraform Module
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  flattened-terraform-module-pr-workflow:
+    name: Terraform Module Pull Request Workflow
+    uses: eingram-homelab/reusable-workflows/.github/workflows/_flattened-terraform-module-pr-workflow.yaml@main
