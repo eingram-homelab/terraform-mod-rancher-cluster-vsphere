@@ -1,0 +1,12 @@
+---
+name: Feature Branch Workflow | Terraform Module
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  flattened-terraform-f-workflow:
+    name: Terraform Feature Branch Workflow
+    uses: eingram-homelab/reusable-workflows/.github/workflows/_flattened-terraform-f-workflow.yaml@main
